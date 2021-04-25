@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-image: radial-gradient(circle at var(--perE) 7%, rgba(40, 40, 40, 0.04) 0%, rgba(40, 40, 40, 0.04) 50%, rgba(200, 200, 200, 0.04) 50%, rgba(200, 200, 200, 0.04) 100%), radial-gradient(circle at var(--perC) var(--perD), rgba(99, 99, 99, 0.04) 0%, rgba(99, 99, 99, 0.04) 50%, rgba(45, 45, 45, 0.04) 50%, rgba(45, 45, 45, 0.04) 100%), radial-gradient(circle at var(--perA) var(--perB), rgba(243, 243, 243, 0.04) 0%, rgba(243, 243, 243, 0.04) 50%, rgba(37, 37, 37, 0.04) 50%, rgba(37, 37, 37, 0.04) 100%), linear-gradient(var(--angle), #22deed, #8759d7);
+  animation: move 30s infinite alternate linear;
+  /* background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%); */
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
+  height: auto;
+  min-height: 100%;
+}
+
+@property --perA {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 75%;
+}
+@property --perB {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 99%;
+}
+@property --perC {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 15%;
+}
+@property --perD {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 16%;
+}
+@property --perE {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 86%;
+}
+@property --angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@-webkit-keyframes move {
+  100% {
+    --perA: 85%;
+    --perB: 49%;
+    --perC: 45%;
+    --perD: 39%;
+    --perE: 70%;
+    --angle: 360deg;
+  }
+}
+
+@keyframes move {
+  100% {
+    --perA: 85%;
+    --perB: 49%;
+    --perC: 45%;
+    --perD: 39%;
+    --perE: 70%;
+    --angle: 360deg;
+  }
+}
+/* syntax highlighting */
+.hljs,
+.hljs-subst {
+  color: #f8f8f2;
+}
+
+.hljs-strong,
+.hljs-emphasis {
+  color: #a8a8a2;
+}
+
+.hljs-bullet,
+.hljs-quote,
+.hljs-number,
+.hljs-regexp,
+.hljs-literal,
+.hljs-link {
+  color: #ae81ff;
+}
+
+.hljs-code,
+.hljs-title,
+.hljs-section,
+.hljs-selector-class {
+  color: #a6e22e;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-name,
+.hljs-attr {
+  color: #f92672;
+}
+
+.hljs-symbol,
+.hljs-attribute {
+  color: #66d9ef;
+}
+
+.hljs-params,
+.hljs-class .hljs-title {
+  color: #f8f8f2;
+}
+
+.hljs-string,
+.hljs-type,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-selector-id,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-addition,
+.hljs-variable,
+.hljs-template-variable {
+  color: #e6db74;
+}
+
+.hljs-comment,
+.hljs-deletion,
+.hljs-meta {
+  color: #75715e;
+}
+
+/* button style */
+.item {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 10px;
+  border-radius: 25px;
+  background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+  animation-iteration-count: infinite!important;
+}
+
+.bg {
+  height: 100px;
+  padding: 0 10px;
+  line-height: 100px;
+  border-radius: 10px;
+  text-align: center;
+}
