@@ -49,9 +49,9 @@ export default {
     return {
       open: true,
       filters: {
-        basic: false,
-        entrance: false,
-        exit: false,
+        basic: true,
+        entrance: true,
+        exit: true,
         attention: true,
         background: true
       }

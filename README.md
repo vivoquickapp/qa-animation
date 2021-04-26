@@ -1,16 +1,12 @@
-<p align="center">
-  <img src="https://i.loli.net/2020/05/02/nLAfPu43zeX6h8M.png" >
-  <h3 align="center">Beautifully simple click-to-copy CSS effects</h3>
-</p>
+# qa-animation 快应用动画库
 
-To run locally, `npm install` then `npm run dev`. Of course, if you want to build and deploy to your own domain, You can do this by modifying `./scripts/deploy` and execute `npm run deploy` command.
+开发适配了156+个兼容快应用的动画，可以方便的预览效果，点击复制到剪贴板即可使用。[点击在线查看](https://vivoquickapp.github.io/qa-animation/)
 
-## Contributing
+## 本地开发
+在项目根目录运行下面两条命令
+```shell script
+npm i
+npm run start
+```
+即可本地预览项目效果
 
-Check out the [contributing guide](CONTRIBUTING.md) to learn how you can help out!
-
-Always be sure to follow the [Code of Conduct](CODE_OF_CONDUCT.md).
-
-## License
-
-The CSSFX site and effects are [MIT licensed](LICENSE.md).

@@ -5,13 +5,20 @@ export default {
     [
       '@nuxtjs/google-analytics',
       {
-        id: 'UA-86109050-10',
+        id: 'G-9KHKW6RM0L',
         dev: false
       }
     ]
   ],
+  target: 'static',
+  router: {
+    base: '/qa-animation/'
+  },
+  server: {
+    host: '0' // default: localhost
+  },
   head: {
-    title: 'CSSFX - Beautifully simple click-to-copy CSS effects',
+    title: 'qa-animation - 完美兼容快应用的动画库',
     meta: [
       { charset: 'utf8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -22,24 +29,16 @@ export default {
       },
       {
         property: 'og:title',
-        content: 'CSSFX - Beautifully simple click-to-copy CSS effects'
+        content: 'qa-animation - 完美兼容快应用的动画库'
       },
       {
         property: 'og:description',
         content:
           'Browse a carefully crafted collection of loaders, hover effects, transitions, and other CSS effects to use in your next project. Effects are designed with an emphasis on fluidity, simplicity, and ease of use.'
       },
-      { property: 'og:type', content: 'website' },
-      { property: 'og:url', content: 'https://cssfx.lovejade' },
-      { property: 'og:image', content: 'http://cssfx.dev/logo.png' },
-      {
-        property: 'og:image:secure_url',
-        content: 'https://cssfx.lovejade/logo.png'
-      },
-      { property: 'og:image:alt', content: 'cssfx logo' },
+      { property: 'og:image:alt', content: 'qa-animation logo' },
       { property: 'og:image:width', content: '1000' },
       { property: 'og:image:height', content: '800' },
-      { name: 'twitter:card', content: 'summary' },
       { name: 'msapplication-TileColor', content: '#0d0b1e' },
       { name: 'theme-color', content: '#ffffff' }
     ],
