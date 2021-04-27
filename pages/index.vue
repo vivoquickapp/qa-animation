@@ -57,7 +57,7 @@ export default {
 .color {
   width: 100%;
   height: 0.5em;
-  background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 100%);
+  background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
 }
 .inspect-bg {
   z-index: 998;
