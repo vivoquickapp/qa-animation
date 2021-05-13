@@ -1,15 +1,6 @@
 export default {
   css: ['~/assets/main.css', '~/assets/animation.css'],
-  plugins: ['~/plugins/highlight.js', '~/plugins/clipboard.js'],
-  modules: [
-    [
-      '@nuxtjs/google-analytics',
-      {
-        id: 'G-9KHKW6RM0L',
-        dev: false
-      }
-    ]
-  ],
+  plugins: ['~/plugins/highlight.js', '~/plugins/clipboard.js', '~/plugins/gtag.js'],
   target: 'static',
   router: {
     base: '/qa-animation/'
